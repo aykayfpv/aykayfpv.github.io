@@ -1,1 +1,125 @@
-hello world
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Krona+One&display=swap');
+
+        .text-stroke {
+            color: transparent;
+            -webkit-text-stroke: 3px white;
+        }
+
+        .courier-prime {
+            font-family: "Courier Prime", monospace;
+        }
+
+        .krona-one {
+            font-family: "Krona One", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-[#181818] text-white">
+    <header class="text-2xl courier-prime flex items-center justify-between w-full pt-10 pl-16 pr-16">
+        <h1>Adrian</h1>
+        <nav>
+            <ul class="flex space-x-28">
+                <li><a href="#" class="text-[#916EC8] border-b-3 pb-2 border-[#916EC8]">Portfolio</a>
+                </li>
+                <li><a href="#"
+                        class="hover:text-[#916EC8] hover:border-b-3 hover:pb-2 hover:border-[#916EC8] hover:duration-200">Experience</a>
+                </li>
+                <li><a href="#"
+                        class="hover:text-[#916EC8] hover:border-b-3 hover:pb-2 hover:border-[#916EC8] hover:duration-200">Projects</a>
+                </li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="flex flex-col items-start justify-center pl-16 mt-60">
+        <div class="text-4xl text-white courier-prime mb-8">
+            Hi, my name is
+        </div>
+        <div class="text-9xl flex space-x-8 mr-16 krona-one">
+            <div class="text-white text-stroke">
+                ADRIAN
+            </div>
+            <div class="text-[#916EC8] ml-2">
+                KUGEL
+            </div>
+        </div>
+        <div class="text-4xl text-white courier-prime mt-4 mr-16">
+            and I am a
+            <span class="text-[#916EC8] wrap typewrite" period="2000"
+                data-type='[ "Frontend Developer", "Creative", "Maker"]'></span>
+        </div>
+        <div class="text-2xl text-white mt-16 mr-16">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua.
+        </div>
+        <div class="flex space-x-8 text-2xl courier-prime text-white bg-transparent">
+            <button
+                class="py-4 px-6 border-[#916EC8] border-4 rounded-2xl mt-16 hover:bg-[#916EC8] hover:text-[#181818] hover:duration-300">
+                Contact me
+            </button>
+            <button
+                class="py-4 px-6 border-[#916EC8] border-4 rounded-2xl mt-16 hover:bg-[#916EC8] hover:text-[#181818] hover:duration-300">
+                Download CV
+            </button>
+        </div>
+
+    </section>
+
+    <div class="grid grid-cols-2 grid-rows-2 gap-18 p-18 mt-64">
+        <section class="order-1">
+            <h2 class="text-[#916EC8] text-4xl courier-prime">
+                about me
+            </h2>
+            <div class="text-2xl mt-16">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et
+                dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                Stet
+                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </div>
+
+        </section>
+
+        <section class="order-2 aspect-w-1 aspect-h-1">
+            <img src="/assets/img_forest.jpg" class="w-auto h-full object-cover rounded-2xl grayscale">
+        </section>
+
+        <section class="order-4">
+            <h2 class="text-[#916EC8] text-4xl courier-prime">
+                my skills
+            </h2>
+            <div class="text-2xl mt-16">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et
+                dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                Stet
+                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </div>
+
+        </section>
+
+        <section class="order-3 aspect-w-1 aspect-h-1">
+            <img src="/assets/mountain-3.jpg" class="w-auto h-full object-cover rounded-2xl grayscale">
+        </section>
+    </div>
+
+    <script src="script.js">
+    </script>
+
+</body>
+
+</html>
