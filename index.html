@@ -20,14 +20,19 @@
         .krona-one {
             font-family: "Krona One", sans-serif;
         }
+
+        .aspect-ratio {
+            aspect-ratio: 10 / 10;
+            /* Beispiel: 16:9 */
+        }
     </style>
 </head>
 
-<body class="bg-[#181818] text-white">
-    <header class="text-2xl courier-prime flex items-center justify-between w-full pt-10 pl-16 pr-16">
+<body class="bg-[#181818] text-white max-w-screen-2xl mx-auto">
+    <header class="md:text-2xl courier-prime flex items-center justify-between w-full pt-10 pl-16 pr-16">
         <h1>Adrian</h1>
         <nav>
-            <ul class="flex space-x-28">
+            <ul class="flex md:space-x-28 space-x-6">
                 <li><a href="#" class="text-[#916EC8] border-b-3 pb-2 border-[#916EC8]">Portfolio</a>
                 </li>
                 <li><a href="#"
@@ -49,11 +54,11 @@
         <div class="text-4xl text-white courier-prime mb-8">
             Hi, my name is
         </div>
-        <div class="text-9xl flex space-x-8 mr-16 krona-one">
+        <div class="text-9xl md:flex space-x-8 -ml-2 md:ml-0 mr-16 krona-one">
             <div class="text-white text-stroke">
                 ADRIAN
             </div>
-            <div class="text-[#916EC8] ml-2">
+            <div class="text-[#916EC8] -ml-2 md:ml-0">
                 KUGEL
             </div>
         </div>
@@ -79,8 +84,8 @@
 
     </section>
 
-    <div class="grid grid-cols-2 grid-rows-2 gap-18 p-18 mt-64">
-        <section class="order-1">
+    <div class="grid grid-cols-1 md:grid-cols-2 grid-rows-4 gap-18 p-18 mt-64">
+        <section class="order-1 md:order-1">
             <h2 class="text-[#916EC8] text-4xl courier-prime">
                 about me
             </h2>
@@ -94,11 +99,11 @@
 
         </section>
 
-        <section class="order-2 aspect-w-1 aspect-h-1">
-            <img src="/assets/img_forest.jpg" class="w-auto h-full object-cover rounded-2xl grayscale">
+        <section class="order-2 md:order-2 flex items-center justify-center relative">
+            <img src="/assets/img_forest.jpg" class="object-cover w-full h-full rounded-2xl grayscale ">
         </section>
 
-        <section class="order-4">
+        <section class="order-3 md:order-4">
             <h2 class="text-[#916EC8] text-4xl courier-prime">
                 my skills
             </h2>
@@ -112,8 +117,8 @@
 
         </section>
 
-        <section class="order-3 aspect-w-1 aspect-h-1">
-            <img src="/assets/mountain-3.jpg" class="w-auto h-full object-cover rounded-2xl grayscale">
+        <section class="order-4 md:order-3 flex items-center justify-center relative">
+            <img src="/assets/mountain-3.jpg" class="object-cover w-full h-full rounded-2xl grayscale ">
         </section>
     </div>
 
